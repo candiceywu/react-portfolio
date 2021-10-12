@@ -7,15 +7,15 @@ import Footer from './Footer';
 import Header from './Header';
 import Navigation from './Navigation';
 import Project from './Project';
-import Resume from './Resume';
+import Portfolio from './Portfolio';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Portfolio');
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
-    if (currentPage === 'Portfolio') {
-      return <Portfolio />;
+    if (currentPage === 'Navigation') {
+      return <Navigation />;
     }
     if (currentPage === 'About') {
       return <About />;
@@ -23,7 +23,16 @@ export default function PortfolioContainer() {
     if (currentPage === 'Contact') {
       return <Contact />;
     }
-    return <Contact />;
+    if (currentPage === 'Header') {
+      return <Header />;
+    }
+    if (currentPage === 'Footer') {
+      return <Footer />;
+    }
+    if (currentPage === 'Project') {
+      return <Project />;
+    }
+    return <Portfolio />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
