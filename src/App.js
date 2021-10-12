@@ -7,6 +7,9 @@ function App() {
   return (
     <div>
       <Header />
+      <About />
+      <Portfolio />
+      <Contact /> 
       <Footer />
     </div>
   );
