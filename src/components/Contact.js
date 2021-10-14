@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // Here we import a helper function that will check if the email is valid
-import { validateEmail } from '../utils/helpers';
+import validateEmail from '../utils/helpers';
 
 function ContactForm() {
     // Create state variables for the fields in the form
@@ -14,14 +14,16 @@ function ContactForm() {
         const { target } = e;
         const inputType = target.name;
         const inputValue = target.value;
+        const contactStateCopy = {...contactState};
+     console.log(contactState)
 
         // Based on the input type, we set the state of either email, name, and message
         if (inputType === 'email') {
-            setEmail(inputValue);
+            setContactState({email:inputValue, name: contactStateCopy.name, message:contactState.message});
         } else if (inputType === 'name') {
-            setName(inputValue);
+            setContactState({name: inputValue, email: contactStateCopy.email, message: contactStateCopy.message});
         } else {
-            setMessage(inputValue);
+            setContactState({message: inputValue, email: contactStateCopy.email, name: contactStateCopy.name});
         }
         if (!errorMessage) {
             setContactState({...contactState, [target.name]: target.value})

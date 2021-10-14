@@ -7,28 +7,14 @@ import Navigation from '../components/Navigation';
 
 function Header() {
     return (
-        <div>
-            <header>
-                <Navigation />
-            </header>
-
-            <section className="header">
+        <header className="header">
+            <div>
                 <h1>hi there, i'm candice.</h1>
-                {/* <nav>
-                    <ul>
-                        <li>
-                            <a href="#About">about.</a>
-                        </li>
-                        <li>
-                            <a href="#Portfolio">portfolio.</a>
-                        </li>
-                        <li>
-                            <a href="#Contact">contact.</a>
-                        </li>
-                    </ul>
-                </nav> */}
-            </section>
-       </div>
+            </div>
+            <div>
+                <Navigation />
+            </div>
+        </header>
     )
 }
 
