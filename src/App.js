@@ -12,8 +12,11 @@ function App() {
   return (
     <div>
       <Header />
+      <a name="About"></a>
       <About />
+      <a name="Portfolio"></a>
       <Portfolio />
+      <a name="Contact"></a>
       <Contact /> 
       <Footer />
     </div>
