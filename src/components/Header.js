@@ -9,12 +9,12 @@ function Header() {
     return (
         <div>
             <header>
-                {/* <Navigation /> */}
+                <Navigation />
             </header>
 
             <section className="header">
                 <h1>hi there, i'm candice.</h1>
-                <nav>
+                {/* <nav>
                     <ul>
                         <li>
                             <a href="#About">about.</a>
@@ -26,7 +26,7 @@ function Header() {
                             <a href="#Contact">contact.</a>
                         </li>
                     </ul>
-                </nav>
+                </nav> */}
             </section>
        </div>
     )
