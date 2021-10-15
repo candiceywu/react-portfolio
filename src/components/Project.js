@@ -56,16 +56,13 @@ function Project() {
 
     return (
         <section className="container">
-            <div>
-                <h2>portfolio.</h2>
-            </div>
             <div className="project-row">
                 {projects.map((project) => (
                     <div key={project.id} className="project-img">
                         <h2>{project.title}</h2>
-                        <img src={require(`../assets/images/${project.image}`).default} alt={project.imageAlt} />
                         <a target="_blank" rel="noreferrer" href={project.github}>github.</a>
                         <a target="_blank" rel="noreferrer" href={project.deployedUrl}>application.</a>
+                        <img src={require(`../assets/images/${project.image}`).default} alt={project.imageAlt} />
                     </div>
                 ))}
             </div>
