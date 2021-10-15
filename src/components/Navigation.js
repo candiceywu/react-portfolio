@@ -1,4 +1,5 @@
 import React from 'react';
+import Pdf from '../assets/resume/CandiceWu_resume.pdf';
 
 function Navigation() {
     return (
@@ -14,7 +15,9 @@ function Navigation() {
                     <a href="#Contact">contact.</a>
                 </li>
                 <li>
-                    <a href="#Resume">resume.</a>
+                <li>
+                        <a href={Pdf} target="_blank" rel="noreferrer">resume.</a>
+                    </li>
                 </li>
             </ul>
         </nav>

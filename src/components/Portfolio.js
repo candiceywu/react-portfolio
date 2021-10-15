@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-
+import React from 'react';
 import Project from './Project';
 
 
@@ -8,6 +7,7 @@ function Portfolio() {
     <section className="work" id="work">
       <div className="heading">
         <h1 className="project-title">work.</h1>
+        <Project />
       </div>
     </section>
   )

@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import Pdf from '../assets/resume/CandiceWu_resume.pdf';
 
 function Footer() {
     return (
@@ -7,16 +8,16 @@ function Footer() {
             <nav>
                 <ul>
                     <li>
-                        <a href="https://www.linkedin.com/in/candicewu/" target="_blank">linkedin.</a>
+                        <a href="https://www.linkedin.com/in/candicewu/" target="_blank" rel="noreferrer">linkedin.</a>
                     </li>
                     <li>
-                        <a href="https://github.com/candiceywu" target="_blank">github.</a>
+                        <a href="https://github.com/candiceywu" target="_blank" rel="noreferrer">github.</a>
                     </li>
                     <li>
-                        <a href="mailto: candice.ying.wu@gmail.com" target="_blank">email.</a>
+                        <a href="mailto: candice.ying.wu@gmail.com" target="_blank" rel="noreferrer">email.</a>
                     </li>
                     <li>
-                        <a href="../assets/resume/Candice Wu resume.pdf" target="_blank">resume.</a>
+                        <a href={Pdf} target="_blank" rel="noreferrer">resume.</a>
                     </li>
                 </ul>
             </nav>

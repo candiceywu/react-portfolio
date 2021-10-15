@@ -1,6 +1,7 @@
 import React from 'react';
 
 
+
 function About() {
     return (
         <section className="about" id="about">
@@ -8,7 +9,7 @@ function About() {
                 <h1 className="title">about.</h1>
             </div>
             <div className="blurb">
-                <img src='../../assets/images/portrait.png' alt="photo of Candice Wu" />
+                <img src={require(`../assets/images/portrait.jpg`).default} alt="photo of Candice Wu" />
             </div>
             <div>
                 <p>I'm new here, but I think you are too.

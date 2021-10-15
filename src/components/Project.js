@@ -1,73 +1,75 @@
 import React from 'react';
-import Portfolio from './Portfolio';
-
-const projects = [
-    {
-        title: '',
-        imageSrc: '',
-        imageAlt: '',
-        github: '',
-        deployedUrl: '',
-        id: 1
-    },
-    {
-        title: '',
-        imageSrc: '',
-        imageAlt: '',
-        github: '',
-        deployedUrl: '',
-        id: 2
-    },
-    {
-        title: '',
-        imageSrc: '',
-        imageAlt: '',
-        github: '',
-        deployedUrl: '',
-        id: 3
-    },
-    {
-        title: '',
-        imageSrc: '',
-        imageAlt: '',
-        github: '',
-        deployedUrl: '',
-        id: 4
-    },
-    {
-        title: '',
-        imageSrc: '',
-        imageAlt: '',
-        github: '',
-        deployedUrl: '',
-        id: 5
-    },
-    {
-        title: '',
-        imageSrc: '',
-        imageAlt: '',
-        github: '',
-        deployedUrl: '',
-        id: 6
-    }
-]
+// import Portfolio from './Portfolio';
 
 function Project() {
+
+    const projects = [
+        {
+            title: 'onTrack',
+            image: 'onTrack.png',
+            imageAlt: 'image of app',
+            github: 'https://github.com/candiceywu/onTrack',
+            deployedUrl: 'https://peaceful-brook-31627.herokuapp.com/',
+            id: 1
+        },
+        {
+            title: 'Job Search',
+            image: 'job-search.png',
+            imageAlt: 'image of app',
+            github: 'https://github.com/Kimberly-Rodriguez/job-search',
+            deployedUrl: 'https://kimberly-rodriguez.github.io/job-search/',
+            id: 2
+        },
+        {
+            title: 'Weather Dashboard',
+            image: 'weatherdashboard.png',
+            imageAlt: 'image of app',
+            github: 'https://github.com/candiceywu/weather-dashboard',
+            deployedUrl: 'https://candiceywu.github.io/weather-dashboard/',
+            id: 3
+        },
+        {
+            title: 'My Daily Planner',
+            image: 'mydailyplanner6.png',
+            imageAlt: 'image of app',
+            github: 'https://github.com/candiceywu/my-daily-planner',
+            deployedUrl: 'https://candiceywu.github.io/my-daily-planner/',
+            id: 4
+        },
+        {
+            title: 'Note Taker',
+            image: 'notetaker3.png',
+            imageAlt: 'image of app',
+            github: 'https://github.com/candiceywu/note-taker',
+            deployedUrl: 'https://fierce-lowlands-57764.herokuapp.com/',
+            id: 5
+        },
+        {
+            title: 'Secure Password Generator',
+            image: 'securepasswordgenerator.png',
+            imageAlt: 'image of app',
+            github: ' https://github.com/candiceywu/secure-password-generator',
+            deployedUrl: 'https://candiceywu.github.io/secure-password-generator/',
+            id: 6
+        }
+    ];
+
     return (
-        <div className="container">
+        <section className="container">
             <div>
-            <h2>projects.</h2>
+                <h2>portfolio.</h2>
             </div>
-          <div>
-              {projects.map((project) = (
-                  <Portfolio title={projects.title} key={projects.id} imageSrc={projects.imageSrc} imageAlt={projects.imageAlt} github={projects.github} deployedUrl={projects.deployedUrl}/>
-              ))}
-          </div>
-
-
-
-        </div>
+            <div className="project-row">
+                {projects.map((project) => (
+                    <div key={project.id} className="project-img">
+                        <h2>{project.title}</h2>
+                        <img src={require(`../assets/images/${project.image}`).default} alt={project.imageAlt} />
+                        <a target="_blank" rel="noreferrer" href={project.github}>github.</a>
+                        <a target="_blank" rel="noreferrer" href={project.deployedUrl}>application.</a>
+                    </div>
+                ))}
+            </div>
+        </section>
     )
 }
-
 export default Project;
