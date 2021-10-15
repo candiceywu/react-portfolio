@@ -46,9 +46,12 @@ function ContactForm() {
     };
 
     return (
-        <section className="container">
+        <section className="row" id="contact">
+            <div className="heading col-6">
+                <h1 className="title">contact.</h1>
+            </div>
             <form>
-                <div className="form-group">
+                <div className="form-group col-6">
                     <label for="form-name">name.</label>
                     <input type="text"
                         name="name"

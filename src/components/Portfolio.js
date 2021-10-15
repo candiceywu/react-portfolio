@@ -4,13 +4,16 @@ import Project from './Project';
 
 function Portfolio() {
   return (
-    <section className="col" id="work">
-      <div className="heading">
-        <h1 className="project-title">work.</h1>
-        <Project />
-      </div>
-    </section>
+      <section className="row" id="about">
+          <div className="heading col-6">
+              <h1 className="title">work.</h1>
+          </div>
+          <div className="col-6">
+            <Project />
+          </div>
+      </section>
   )
 }
+
 
 export default Portfolio;

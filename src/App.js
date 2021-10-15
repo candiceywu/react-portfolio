@@ -2,9 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import About from './components/About';
-import Navigation from './components/Navigation';
-// import Portfolio from './components/Portfolio';
-import Project from './components/Project';
+import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -15,7 +13,7 @@ function App() {
       <a name="About"></a>
       <About />
       <a name="Portfolio"></a>
-      <Project />
+      <Portfolio />
       <a name="Contact"></a>
       <Contact /> 
       <Footer />

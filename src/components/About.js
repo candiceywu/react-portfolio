@@ -4,14 +4,12 @@ import React from 'react';
 
 function About() {
     return (
-        <section className="about" id="about">
-            <div className="heading">
+        <section className="row" id="about">
+            <div className="heading col-6">
                 <h1 className="title">about.</h1>
             </div>
-            <div className="blurb">
+            <div className="blurb col-6">
                 <img src={require(`../assets/images/portrait.jpg`).default} alt="photo of Candice Wu" />
-            </div>
-            <div>
                 <p>I'm new here, but I think you are too.
                     <br />
                     I've spent my life working in ocean resource policy and resilience management, but I'm in the midst of switching career angles - as in, I still want to focus my life's energy on conservation and stewardship, but just through a new approach.
