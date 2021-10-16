@@ -1,5 +1,12 @@
 import React from 'react';
-// import Portfolio from './Portfolio';
+
+const styles = {
+    a: {
+        textDecoration: 'none',
+        color: 'rgb(225, 182, 52)',
+    }
+}
+
 
 function Project() {
 
@@ -45,7 +52,7 @@ function Project() {
             id: 5
         },
         {
-            title: 'Secure Password Generator',
+            title: 'Password Generator',
             image: 'securepasswordgenerator.png',
             imageAlt: 'image of app',
             github: ' https://github.com/candiceywu/secure-password-generator',
@@ -62,8 +69,10 @@ function Project() {
                     {projects.map((project) => (
                         <div key={project.id} className="project-img">
                             <h2 className="project-title">{project.title}</h2>
-                            <a className="github-link" target="_blank" rel="noreferrer" href={project.github}>github.</a>
-                            <a className="deployed-link" target="_blank" rel="noreferrer" href={project.deployedUrl}>application.</a>
+                            <div className="project-links">
+                            <a style={styles.a} className="github-link" target="_blank" rel="noreferrer" href={project.github}>github.</a>
+                            <a style={styles.a} className="deployed-link" target="_blank" rel="noreferrer" href={project.deployedUrl}>application.</a>
+                            </div>
                             <img src={require(`../assets/images/${project.image}`).default} alt={project.imageAlt} />
                         </div>
                     ))}
