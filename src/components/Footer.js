@@ -10,7 +10,7 @@ const styles = {
 
 function Footer() {
     return (
-        <footer className="footer container">
+        <footer className="footer container col-12">
             <div className="row">
                 <div className="footer col-6">
                     <h1>learn more.</h1>
