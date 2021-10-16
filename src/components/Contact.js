@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Footer from './Footer';
+
 // Here we import a helper function that will check if the email is valid
 import validateEmail from '../utils/helpers';
 
@@ -46,12 +48,13 @@ function ContactForm() {
     };
 
     return (
-        <section className="row" id="contact">
+        <section className="contact container">
+            <div className="row">
             <div className="heading col-6">
-                <h1 className="title">contact.</h1>
+                <h1 className="title">let's connect IRL.</h1>
             </div>
-            <form>
-                <div className="form-group col-6">
+            <form className="col-6">
+                <div className="form-group">
                     <label for="form-name">name.</label>
                     <input type="text"
                         name="name"
@@ -84,13 +87,17 @@ function ContactForm() {
                         placeholder="let's chat.">
                     </textarea>
                 </div>
-                <button type="button" onClick={handleFormSubmit}>submit.</button>
+                <button className="button" type="button" onClick={handleFormSubmit}>submit.</button>
             </form >
             {errorMessage && (
                 <div>
                     <p className="error-text">{errorMessage}</p>
                 </div>
             )}
+            {/* <div>
+                <Footer />
+                </div> */}
+            </div>
         </section >
     );
 }

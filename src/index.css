@@ -2,11 +2,6 @@ body {
   margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 * {
   box-sizing: border-box;
   background-color: rgb(169, 92, 104);
@@ -18,47 +13,42 @@ main {
   flex-wrap: wrap;
 }
 
-/* Resize images
-.container img {
-    width: 100%;
-    height: auto;
-} */
-
 .links {
   display: flex;
   flex-wrap: inline-block;
   justify-content: space-around;
   font-size: 20px;
   align-items: center;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
-.header, .contact {
+.header, .footer {
   display: flex;
   flex-wrap: wrap;
   justify-content:space-between;
-  align-items: center;
+  align-items: start;
 }
 
-.header h1, .contact h1 {
-  font-size: 68px;
-  padding: 40px;
-  margin: 40px;
-}
-
-.header nav, .contact nav {
+.header {
   padding: 30px;
   margin: 30px;
   font-size: 24px;
+  height: 200px;
 }
 
-.header nav ul, .contact nav ul {
+.footer {
+  padding: 200px 0px 50px 0px;
+  font-size: 24px;
+  align-items: flex-end;
+}
+
+.header ul, .footer ul {
   list-style: none;
 }
 
-.header nav ul li, .contact nav ul li {
+.header ul li, .footer ul li {
   display: inline;
-  padding: 0px 40px;
+  padding: 0px 20px;
 }
 
 a {
@@ -73,52 +63,84 @@ a {
   margin: 40px;
 }
 
-.heading {
+.contact {
+  padding: 100px 0px 50px;
+}
+
+/* .heading {
   flex: 1 0 50%;
+} */
+
+.heading h1, .footer h1 {
+  font-size: 48px;
 }
 
-.heading h1 {
-  font-size: 68px;
-  height: 300px;
-}
-
-.about .blurb, .work .projects {
+/* .about .blurb {
   display: flex;
   flex-wrap: wrap;
-  flex: 1 0 50%;
-  width: 50%;
-}
+} */
 
-.about .blurb p {
+.about p {
   display: flex;
   flex-wrap: wrap;
   text-align: flex-start;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.5;
   padding: 40px 0px;
 }
 
-.work .projects header {    
-  padding: 30px 10px 5px 10px;
-  font-size: 26px;
-  /* font-weight: bold; */
-  text-align: center;
-}
 
-.work .projects .app-large {
+.project {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   min-width:50%;
   font-size: 16px;
   transition: width 0.5s linear;
+  }
+  
+  .project-img, .about-img {
+  width: 45%;
+  margin: 5px;
+  }
+  
+  .project-img img, .about-img img {
+  width: 100%;
+  }
+
+
+.project {
+  /* flex: 1 0 50%; */
+  width: 100%;
+  justify-content: space-between;
+  min-width:100%;
+  font-size: 16px;
+  padding: 0px 15px 15px 15px;
 }
 
-.work .projects .app-small {
-  flex: 1 0 50%;
-  width: 50%;
-  justify-content: space-between;
-  min-width:25%;
+.project h2 {    
+  padding: 20px 10px 5px 10px;
   font-size: 16px;
-  padding: 40px 15px 15px 15px;
+  /* font-weight: bold; */
+  text-align: center;
+}
+
+/* contact-form submit button */
+.button {
+  background-color: rgb(225, 182, 52);
+  border: none;
+  color: rgb(169, 92, 104);
+  padding: 10px 22px;
+  margin: 10px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* deployed app link in projects */
+.deployed-link {
+  justify-content: flex-end;
 }
 
 /* .work .projects .app-large img:hover {
@@ -138,16 +160,16 @@ a {
       flex-wrap: wrap;
   }
 
-  .links {
+  /* .links {
       display: flex;
       flex-wrap: inline-block;
       justify-content: space-around;
       font-size:  14px;
       align-items: center;
       padding: 8px;
-  }
+  } */
   
-  .header, .contact {
+  .header, .footer {
       display: flex;
       flex-wrap: wrap;
       padding: 10px;
@@ -155,23 +177,23 @@ a {
       justify-content:space-between;
   }
   
-  .header h1, .contact h1 {
+  .header h1, .footer h1 {
       font-size: 26px;
       padding: 10px;
       margin: 10px;
   }
   
-  .header nav, .contact nav {
+  .navigation, .footer {
       padding: 10px;
       margin: 10px;
       font-size: 16px;
   }
   
-  .header nav ul, .contact nav ul {
+  .navigation ul, .footer ul {
       list-style: none;
   }
   
-  .header nav ul li, .contact nav ul li {
+  .navigation ul li, .footer ul li {
       display: inline-block;
       padding: 0px 20px;
   }
@@ -332,13 +354,13 @@ a {
       padding: 5px 0px;
   }
   
-  .work .projects header {    
+  .project header {    
       padding: 10px 5px 5px 5px;
       font-size: 8px;
       text-align: center;
   }
   
-  .work .projects .app-large {
+  .project .app-large {
       width: 100%;
       min-width:50%;
       transition: width 0.5s linear;
@@ -363,5 +385,6 @@ a {
   } */
 
 }
+
 
 
