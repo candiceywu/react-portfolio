@@ -15,7 +15,7 @@
   
     /* links at header  */
   .header {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   justify-content:space-between;
   align-items: flex-end;
@@ -27,7 +27,12 @@
   /* hi there i'm candice header title */
   .header h1 {
   font-size: 68px;
+  display: inline-flex;
   /* padding: 50px 0px 0px 0px; */
+  }
+
+  .navbar {
+    display: inline;
   }
   
   /* links at footer  */
