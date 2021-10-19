@@ -12,16 +12,16 @@
   margin: 0;
   }
   
-  main {
+  /* main {
   display: flex;
   flex-wrap: wrap;
-  }
+  } */
   
     /* links at header  */
   .header {
-  display: inline;
-  justify-content:space-between;
-  align-items: flex-end;
+  /* display: inline; */
+  /* justify-content:space-between; */
+  /* align-items: flex-end; */
   padding: 50px 0px 0px 0px;
   font-size: 24px;
   font-weight: bold;
@@ -31,14 +31,19 @@
   /* hi there i'm candice header title */
   .header h1 {
   font-size: 68px;
-  /* display: inline-flex; */
+  display: inline-flex;
   padding: 40px;
   margin: 40px;
+  }
+
+  /* about, work and contact titles */
+  .heading h1 {
+    font-size: 48px;
   }
   
   /* links at nav and footer  */
   .navbar, .footer {
-  /* display: inline; */
+  display: inline-flex;
   font-size: 24px;
   }
   
@@ -61,16 +66,16 @@
   
   .navigation ul li {
   display: inline-flex;
-  /* padding: 0px 10px; */
+  /* padding: 0px 10px; */  
   margin: 50px;
   /* align-items: flex-end; */
   /* justify-content: flex-end; */
   }
 
 .footer ul li {
-  display: inline-flex;
-  /* padding: 0px 20px; */
-  padding: 50px 20px 40px 0px;
+  display: inline;
+  padding: 0px 20px;
+  padding: 50px 10px 40px 0px;
   margin: 40px;
   /* justify-content: flex-end;
   align-items: flex-end; */
@@ -139,10 +144,6 @@
   opacity: 0.7;
   }
   
-  /* contact section */
-  /* .contact {
-  padding: 100px 0px 50px;
-  } */
   
   /* contact-form submit button */
   .button {
@@ -162,234 +163,310 @@
 /* Large smartphones */
 @media screen and (max-width: 768px){
   
-  /* links at header  */
-  .header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-between;
-  align-items: flex-end;
-  padding: 50px 0px 0px 0px;
-  font-size: 20px;
-  }
+  * {
+    box-sizing: border-box;
+    background-color: rgb(169, 92, 104);
+    color:rgb(225, 182, 52);
+    }
   
-  /* hi there i'm candice header title */
-  .header h1 {
-  font-size: 48px;
-  }
-      
-  /* links at footer  */
-  .footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-between;
-  align-items: flex-end;
-  padding: 100px 0px 40px 0px;
-  font-size: 20px;
-  }
-      
-  /* learn more footer title */
-  .footer h1 {
-  font-size: 38px;
-  }
-      
-  /* navigation and footer link layout */
-  .navigation ul, .footer ul {
-  list-style: none;
-  display: inline-flex;
-  }
-        
-  .navigation ul li, .footer ul li {
-  /* display: inline-flex; */
-  padding: 0px 15px;
-  justify-content: flex-end;
-  }
-      
-  /* about and work sections  */
-  .about, .work {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 30px;
-  margin: 30px;
-  }
-      
-  .about p {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: flex-start;
-  font-size: 20px;
-  line-height: 1.5;
-  padding: 30px 0px;
-  }
-      
-  .project {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  font-size: 16px;
-  transition: width 0.5s linear;
-  justify-content: space-between;
-  padding: 0px 10px 10px 10px;
-  }
-      
-  .project-img, .about-img {
-  width: 45%;
-  margin: 5px;
-  }
-                
-  .project-img img, .about-img img {
-  width: 100%;
-  }
-      
-  /* individual projects titles */
-  .project h2 {    
-    padding: 18px 8px 4px 8px;
-    font-size: 20px;
+    .font-link {
+      font-family:'EB Garamond', serif;
+    }
+    
+    body {
+    margin: 0;
+    }
+    
+    /* links at header  */
+    .header {
+    padding: 30px 0px 0px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    }
+  
+    /* about, work and contact titles */
+    .heading h1 {
+    font-size: 24px;
+    }
+    
+    /* hi there i'm candice header title */
+    .header h1 {
+    font-size: 38px;
+    /* display: inline-flex; */
+    padding: 20px;
+    margin: 20px;
+    }
+    
+    /* links at nav and footer  */
+    .navbar, .footer {
+    display: inline-flex;
+    font-size: 14px;
+    }
+    
+    /* learn more footer title */
+    .footer h1 {
+    font-size: 28px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    padding: 20px;
+    margin: 20px;
+    }
+    
+    /* navigation and footer link layout */
+    .navigation ul, .footer ul {
+    list-style: none;
+    display: inline;
+    /* align-items: flex-end; */
+    }
+    
+    .navigation ul li {
+    display: inline-flex;
+    /* padding: 0px 10px; */  
+    margin: 30px;
+    /* align-items: flex-end; */
+    /* justify-content: flex-end; */
+    }
+  
+  .footer ul li {
+    display: inline-flex;
+    /* padding: 0px 20px; */
+    padding: 30px 10px 20px 0px;
+    margin: 20px;
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+    }
+    
+    /* about, contact and portfolio sections  */
+    .about, .contact, .portfolio {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    padding: 20px;
+    margin: 20px;
+    }
+    
+    .about p {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: flex-start;
+    font-size: 16px;
+    line-height: 1;
+    padding: 20px 0px;
+    }
+    
+    .project {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 14px;
+    transition: width 0.5s linear;
+    justify-content: space-between;
+    /* font-size: 26px; */
+    padding: 0px 10px 10px 10px;
+    }
+    
+    .project-img, .about-img {
+    width: 45%;
+    margin: 5px;
+    }
+              
+    .project-img img, .about-img img {
+    width: 100%;
+    }
+    
+    /* individual projects titles */
+    .project h2 {    
+    padding: 15px 8px 5px 8px;
+    font-size: 14px;
+    /* font-weight: bold; */
     text-align: center;
-  }
+    }
+    
+    /* github and deployed app links */
+    .project-links {
+    display: flex;
+    flex-wrap: inline-block;
+    justify-content: space-around;
+    font-size: 14px;
+    align-items: center;
+    }
+    
+    .github-link:hover {
+    opacity: 0.7;
+    }
       
-  /* github and deployed app links */
-  .project-links {
-  display: flex;
-  flex-wrap: inline-block;
-  justify-content: space-around;
-  font-size: 16px;
-  align-items: center;
-  }
-        
-  /* contact section */
-  .contact {
-  padding: 80px 0px 30px;
-  }
-      
-  /* contact-form submit button */
-  .button {
-  background-color: rgb(225, 182, 52);
-  border: none;
-  color: rgb(169, 92, 104);
-  padding: 6px 16px;
-  margin: 8px 0px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  }
-}
-  
+    .deployed-link:hover {
+    opacity: 0.7;
+    }
+    
+    /* contact-form submit button */
+    .button {
+    background-color: rgb(225, 182, 52);
+    border: none;
+    color: rgb(169, 92, 104);
+    padding: 8px 16px;
+    margin: 8px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    }
+  } 
   
 /* Small smartphones */
 @media screen and (max-width: 576px) {
-          
-  /* links at header  */
-  .header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-between;
-  align-items: flex-end;
-  padding: 30px 0px 0px 0px;
-  font-size: 16px;
-  }
-          
-  /* hi there i'm candice header title */
-  .header h1 {
-  font-size: 38px;
-  }
-              
-  /* links at footer  */
-  .footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-between;
-  align-items: flex-end;
-  padding: 100px 0px 40px 0px;
-  font-size: 12px;
-  }
-              
-  /* learn more footer title */
-  .footer h1 {
-  font-size: 28px;
-  }
-              
-  /* navigation and footer link layout */
-  .navigation ul, .footer ul {
-  list-style: none;
-  display: inline-flex;
-  }
-                
-  .navigation ul li, .footer ul li {
-  padding: 0px 10px;
-  justify-content: flex-end;
-  }
-              
-  /* about and work sections  */
-  .about, .work {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
-  margin: 20px;
-  }
-              
-  .about p {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: flex-start;
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 20px 0px;
-  }
-              
-  .project {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  font-size: 12px;
-  transition: width 0.5s linear;
-  justify-content: space-between;
-  padding: 0px 8px 8px 8px;
-  }
-              
-  .project-img, .about-img {
-  width: 45%;
-  margin: 5px;
-  }
-                        
-  .project-img img, .about-img img {
-  width: 100%;
-  }
-              
-  /* individual projects titles */
-  .project h2 {    
-  padding: 14px 4px 4px 4px;
-  font-size: 14px;
-  text-align: center;
-  }
-              
-  /* github and deployed app links */
-  .project-links {
-  display: flex;
-  flex-wrap: inline-block;
-  justify-content: space-around;
-  font-size: 12px;
-  align-items: center;
-  }
-                
-  /* contact section */
-  .contact {
-  padding: 40px 0px 20px;
-  }
-              
-  /* contact-form submit button */
-  .button {
-  background-color: rgb(225, 182, 52);
-  border: none;
-  color: rgb(169, 92, 104);
-  padding: 4px 12px;
-  margin: 6px 0px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 8px;
-  }
-}
+  * {
+    box-sizing: border-box;
+    background-color: rgb(169, 92, 104);
+    color:rgb(225, 182, 52);
+    }
   
+    .font-link {
+      font-family:'EB Garamond', serif;
+    }
+    
+    body {
+    margin: 0;
+    }
+    
+    /* links at header  */
+    .header {
+    padding: 10px 0px 0px 0px;
+    font-size: 14px;
+    font-weight: bold;
+    }
+    
+    /* hi there i'm candice header title */
+    .header h1 {
+    font-size: 18px;
+    /* display: inline-flex; */
+    padding: 10px;
+    margin: 10px;
+    }
+
+    /* about, work and contact titles */
+    .heading h1 {
+    font-size: 14px;
+    }
+    
+    /* links at nav and footer  */
+    .navbar, .footer {
+    display: inline-flex;
+    font-size: 12px;
+    }
+    
+    /* learn more footer title */
+    .footer h1 {
+    font-size: 18px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    padding: 10px;
+    margin: 10px;
+    }
+    
+    /* navigation and footer link layout */
+    .navigation ul, .footer ul {
+    list-style: none;
+    display: inline;
+    /* align-items: flex-end; */
+    }
+    
+    .navigation ul li {
+    display: inline-flex;
+    /* padding: 0px 10px; */  
+    margin: 5px;
+    /* align-items: flex-end; */
+    /* justify-content: flex-end; */
+    }
+  
+  .footer ul li {
+    display: inline-flex;
+    /* padding: 0px 20px; */
+    padding: 10px 5px 10px 0px;
+    margin: 5px;
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+    }
+    
+    /* about, contact and portfolio sections  */
+    .about, .contact, .portfolio {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    padding: 10px;
+    margin: 10px;
+    }
+    
+    .about p {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: flex-start;
+    font-size: 12px;
+    line-height: 1;
+    padding: 10px 0px;
+    }
+    
+    .project {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 12px;
+    transition: width 0.5s linear;
+    justify-content: space-between;
+    /* font-size: 26px; */
+    padding: 0px 5px 5px 5px;
+    }
+    
+    .project-img, .about-img {
+    width: 45%;
+    margin: 5px;
+    }
+              
+    .project-img img, .about-img img {
+    width: 100%;
+    }
+    
+    /* individual projects titles */
+    .project h2 {    
+    padding: 10px 5px 3px 5px;
+    font-size: 12px;
+    /* font-weight: bold; */
+    text-align: center;
+    }
+    
+    /* github and deployed app links */
+    .project-links {
+    display: flex;
+    flex-wrap: inline-block;
+    justify-content: space-around;
+    font-size: 10px;
+    align-items: center;
+    }
+    
+    .github-link:hover {
+    opacity: 0.7;
+    }
+      
+    .deployed-link:hover {
+    opacity: 0.7;
+    }
+    
+    /* contact-form submit button */
+    .button {
+    background-color: rgb(225, 182, 52);
+    border: none;
+    color: rgb(169, 92, 104);
+    padding: 5px 10px;
+    margin: 5px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    }
+
+    .form-control {
+      font-size: 8px;
+    }
+  } 
