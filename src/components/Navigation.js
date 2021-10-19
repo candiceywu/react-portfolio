@@ -10,9 +10,9 @@ const styles = {
 
 function Navigation() {
     return (
-        <nav className="navigation container">
+        <nav className="navigation font-link">
             <div className="row">
-                <div className="nagivation col-6">
+                <div className="navigation">
                     <ul>
                         <li>
                             <a style={styles.a} href="#About">about.</a>

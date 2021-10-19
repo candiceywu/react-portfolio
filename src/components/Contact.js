@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Footer from './Footer';
 
 // Here we import a helper function that will check if the email is valid
 import validateEmail from '../utils/helpers';
@@ -48,55 +47,54 @@ function ContactForm() {
     };
 
     return (
-        <section className="contact container">
+        <section className="contact font-link">
             <div className="row">
-            <div className="heading col-6">
-                <h1 className="title">let's connect IRL.</h1>
-            </div>
-            <form className="col-6">
-                <div className="form-group">
-                    <label for="form-name">name.</label>
-                    <input type="text"
-                        name="name"
-                        className="form-control"
-                        id="form-name"
-                        value={name}
-                        onChange={handleInputChange}
-                        placeholder="name.">
-                    </input>
+                <div className="heading col-6">
+                    <h1>let's connect IRL.</h1>
                 </div>
-                <div className="form-group">
-                    <label for="form-name">email address.</label>
-                    <input type="text"
-                        name="email"
-                        className="form-control"
-                        id="form-email"
-                        value={email}
-                        onChange={handleInputChange}
-                        placeholder="email@example.com.">
-                    </input>
+                <div className="col-6">
+                    <form>
+                        <div className="form-group">
+                            <label for="form-name">name.</label>
+                            <input type="text"
+                                name="name"
+                                className="form-control"
+                                id="form-name"
+                                value={name}
+                                onChange={handleInputChange}
+                                placeholder="name.">
+                            </input>
+                        </div>
+                        <div className="form-group">
+                            <label for="form-name">email address.</label>
+                            <input type="text"
+                                name="email"
+                                className="form-control"
+                                id="form-email"
+                                value={email}
+                                onChange={handleInputChange}
+                                placeholder="email@example.com.">
+                            </input>
+                        </div>
+                        <div className="form-group">
+                            <label for="message">message.</label>
+                            <textarea className="form-control"
+                                name="message"
+                                id="form-message"
+                                value={message}
+                                onChange={handleInputChange}
+                                rows="3"
+                                placeholder="let me know what's on your mind.">
+                            </textarea>
+                        </div>
+                        <button className="button" type="button" onClick={handleFormSubmit}>submit.</button>
+                    </form >
                 </div>
-                <div className="form-group">
-                    <label for="message">message.</label>
-                    <textarea className="form-control"
-                        name="message"
-                        id="form-message"
-                        value={message}
-                        onChange={handleInputChange}
-                        rows="3"
-                        placeholder="let's chat.">
-                    </textarea>
-                </div>
-                <button className="button" type="button" onClick={handleFormSubmit}>submit.</button>
-            </form >
-            {errorMessage && (
-                <div>
-                    <p className="error-text">{errorMessage}</p>
-                </div>
-            )}
-            {/* <div>
-                <Footer />
-                </div> */}
+                {errorMessage && (
+                    <div>
+                        <p className="error-text">{errorMessage}</p>
+                    </div>
+                )}
             </div>
         </section >
     );

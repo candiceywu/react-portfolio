@@ -63,7 +63,7 @@ function Project() {
 
 
     return (
-        <section className="project container">
+        <section className="project font-link">
             <div className="row">
                 <div className="project">
                     {projects.map((project) => (

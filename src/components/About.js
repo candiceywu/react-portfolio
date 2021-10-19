@@ -4,7 +4,7 @@ import React from 'react';
 
 function About() {
     return (
-        <section className="about container">
+        <section className="about font-link">
             <div className="row">
                 <div className="heading col-6">
                     <h1>about.</h1>

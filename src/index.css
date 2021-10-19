@@ -3,6 +3,10 @@
   background-color: rgb(169, 92, 104);
   color:rgb(225, 182, 52);
   }
+
+  .font-link {
+    font-family:'EB Garamond', serif;
+  }
   
   body {
   margin: 0;
@@ -15,58 +19,68 @@
   
     /* links at header  */
   .header {
-  display: inline-flex;
-  flex-wrap: wrap;
+  display: inline;
   justify-content:space-between;
   align-items: flex-end;
   padding: 50px 0px 0px 0px;
   font-size: 24px;
+  font-weight: bold;
   /* height: 200px; */
   }
   
   /* hi there i'm candice header title */
   .header h1 {
   font-size: 68px;
-  display: inline-flex;
-  /* padding: 50px 0px 0px 0px; */
-  }
-
-  .navbar {
-    display: inline;
+  /* display: inline-flex; */
+  padding: 40px;
+  margin: 40px;
   }
   
-  /* links at footer  */
-  .footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-between;
-  align-items: flex-end;
-  padding: 200px 0px 50px 0px;
+  /* links at nav and footer  */
+  .navbar, .footer {
+  /* display: inline; */
   font-size: 24px;
   }
   
   /* learn more footer title */
   .footer h1 {
   font-size: 48px;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  padding: 40px;
+  margin: 40px;
   }
   
   /* navigation and footer link layout */
   .navigation ul, .footer ul {
   list-style: none;
-  display: inline-flex;
-  }
-    
-  .navigation ul li, .footer ul li {
-  /* display: inline-flex; */
-  padding: 0px 20px;
-  justify-content: flex-end;
+  display: inline;
+  /* align-items: flex-end; */
   }
   
-  /* about and work sections  */
-  .about, .work {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  .navigation ul li {
+  display: inline-flex;
+  /* padding: 0px 10px; */
+  margin: 50px;
+  /* align-items: flex-end; */
+  /* justify-content: flex-end; */
+  }
+
+.footer ul li {
+  display: inline-flex;
+  /* padding: 0px 20px; */
+  padding: 50px 20px 40px 0px;
+  margin: 40px;
+  /* justify-content: flex-end;
+  align-items: flex-end; */
+  }
+  
+  /* about, contact and portfolio sections  */
+  .about, .contact, .portfolio {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
   padding: 40px;
   margin: 40px;
   }
@@ -103,7 +117,7 @@
   /* individual projects titles */
   .project h2 {    
   padding: 20px 10px 5px 10px;
-  font-size: 20px;
+  font-size: 22px;
   /* font-weight: bold; */
   text-align: center;
   }
@@ -126,9 +140,9 @@
   }
   
   /* contact section */
-  .contact {
+  /* .contact {
   padding: 100px 0px 50px;
-  }
+  } */
   
   /* contact-form submit button */
   .button {
